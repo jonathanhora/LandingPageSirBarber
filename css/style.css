@@ -170,3 +170,49 @@ body{
     align-items: center;
     gap: 12px;
 }
+
+@media screen  and (max-width: 480px){
+    .container, .header, #hero-container, #services-container{
+        margin: auto;
+        width: 100%;
+        padding: 0;
+    }
+
+    .header{
+        padding-top: 10px;
+    }
+
+    .btn{
+        padding: 10px 20px;
+    }
+
+    .btn-sm{
+        padding: 6px 12px;
+    }
+
+    #hero-container{
+        margin-bottom: 20px;
+    }
+
+    .hero, .services-list{
+        
+        display: block;
+    }
+
+    .overtitle, .title{
+        padding: 20px 10px;
+    }
+
+    .hero-text{
+        padding: 20px 10px ;
+    }
+
+    .service-card{
+        width: 260px;
+        margin: auto auto 20px auto;
+    }
+
+    .hero-img{
+        padding: 0 10px;
+    }
+}
