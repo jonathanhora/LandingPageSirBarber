@@ -22,6 +22,10 @@ body{
     font-size: 0.9rem;
 }
 
+.btn-sm:hover{
+    background-color: #161A1D;
+}
+
 .btn-primary{
     background-color: #BA181B;
     display: flex;
@@ -29,9 +33,19 @@ body{
     gap: 8px;
 }
 
+.btn-primary:hover{
+    background-color: #E5383B;
+}
+
+
 .btn-outline{
     border: 2px solid #FFFFFF;
     background-color: transparent;
+}
+
+.btn-outline:hover{
+    border-color: #D9D9D9;
+    color: #D9D9D9;
 }
 
 .container{
@@ -171,6 +185,26 @@ body{
     gap: 12px;
 }
 
+footer{
+    background-color: #0B090A;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 48px;
+    align-items: center;
+}
+
+.footer-logocopy{
+    display: flex;
+    flex-direction: column;
+    gap: 16px
+}
+
+.icones svg{
+    width: 30px;
+}
+
+
 @media screen  and (max-width: 480px){
     .container, .header, #hero-container, #services-container{
         margin: auto;
@@ -208,11 +242,23 @@ body{
     }
 
     .service-card{
-        width: 260px;
+        width: 400px;
         margin: auto auto 20px auto;
     }
 
     .hero-img{
         padding: 0 10px;
+    }
+
+    .footer-logocopy svg{
+        width: 100px;
+    }
+
+    .footer-logocopy p{
+        font-size: 10px;
+    }
+
+    .icones svg{
+        width: 25px;
     }
 }
